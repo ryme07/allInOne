@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AddEditComponent } from './add-edit/add-edit.component';
 import { ListComponent } from './list/list.component';
-import { LayoutComponent } from './layout/layout.component';
+
 
 
 const routes: Routes = [

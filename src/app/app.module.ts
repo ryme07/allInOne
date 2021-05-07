@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './module/navbar/navbar.component';
 import { HomeComponent } from './page/home/home.component';
-import { UsersComponent } from './components/users/users.component';
+
 import { SomethingComponent } from './page/something/something.component';
 import { ColorBtnComponent } from './module/color-btn/color-btn.component';
 import { MatButtonModule } from '@angular/material/button';
@@ -25,7 +25,7 @@ import { ChildComponent } from './components/child/child.component';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    UsersComponent,
+
     SomethingComponent,
     ColorBtnComponent,
     RainbowDirective,
