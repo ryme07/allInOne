@@ -1,3 +1,4 @@
+import { UserComponent } from './../../page/user/user.component';
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from '@angular/router';
 
@@ -8,7 +9,7 @@ import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
     {
-        path: '', component: LayoutComponent,
+        path: '', component: UserComponent,
         children: [
             { path: '', component: ListComponent },
             { path: 'add', component: AddEditComponent },

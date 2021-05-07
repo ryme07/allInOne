@@ -5,13 +5,15 @@ import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout/layout.component';
 import { AddEditComponent } from './add-edit/add-edit.component';
 import { ListComponent } from './list/list.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   imports: [
     CommonModule,
-    UsersRoutingModule
+    UsersRoutingModule,
+    ReactiveFormsModule
   ],
   declarations: [
     LayoutComponent,
