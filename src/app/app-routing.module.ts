@@ -1,3 +1,4 @@
+import { TextsComponent } from './page/texts/texts.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -9,6 +10,7 @@ const usersModule = () => import('./components/users/user.module').then(x => x.U
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'something', component: SomethingComponent },
+  { path: 'texts', component: TextsComponent },
   { path: 'users', loadChildren: usersModule },
 
   // otherwise redirect to home

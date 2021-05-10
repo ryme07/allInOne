@@ -19,6 +19,9 @@ import { MouseMoveDirective } from './directives/mouse-move.directive';
 import { UserComponent } from './page/user/user.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
+import { AlertComponent } from './module/alert/alert.component';
+import { TextsComponent } from './page/texts/texts.component';
+import { CrudComponent } from './components/crud/crud.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { ChildComponent } from './components/child/child.component';
     MouseMoveDirective,
     UserComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    AlertComponent,
+    TextsComponent,
+    CrudComponent
   ],
   imports: [
     BrowserModule,
