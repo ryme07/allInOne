@@ -7,8 +7,8 @@
             <select formControlName="title" class="form-control"
                 [ngClass]="{ 'is-invalid': submitted && formControl.title.errors }">
                 <option value=""></option>
-                <option value="Mr">M</option>
-                <option value="Miss">Mme</option>
+                <option value="M">M</option>
+                <option value="Mme">Mme</option>
             </select>
             <div *ngIf="submitted && formControl.title.errors" class="invalid-feedback">
                 <div *ngIf="formControl.title.errors.required">Title is required</div>
