@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)='onSubmit()'>
+
+    <select formControlName="name" (change)='changeSuit($event)'>
+        <option value="">Choose </option>
+        <option *ngFor="let suit of suits">{{suit}}</option>
+    </select>
+
+    <!-- show errors-->
+    <div class="error-block" *ngIf="submitted && handleError('name', 'required')">
+        You must provide a value !
+    </div>
+
+    <button>Submit</button>
+
+</form>

@@ -22,6 +22,8 @@ import { ChildComponent } from './components/child/child.component';
 import { AlertComponent } from './module/alert/alert.component';
 import { TextsComponent } from './page/texts/texts.component';
 import { CrudComponent } from './components/crud/crud.component';
+import { SelectDropdownComponent } from './module/select-dropdown/select-dropdown.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,14 +40,16 @@ import { CrudComponent } from './components/crud/crud.component';
     ChildComponent,
     AlertComponent,
     TextsComponent,
-    CrudComponent
+    CrudComponent,
+    SelectDropdownComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    ReactiveFormsModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
