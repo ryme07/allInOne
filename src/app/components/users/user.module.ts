@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { AddEditComponent } from './add-edit/add-edit.component';
 import { ListComponent } from './list/list.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AppModule } from '../../app.module';
 
 
 
@@ -17,7 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   declarations: [
     AddEditComponent,
-    ListComponent
+    ListComponent,
   ]
 })
 export class UserModule { }

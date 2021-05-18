@@ -24,6 +24,7 @@ import { TextsComponent } from './page/texts/texts.component';
 import { CrudComponent } from './components/crud/crud.component';
 import { SelectDropdownComponent } from './module/select-dropdown/select-dropdown.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SpinnerComponent } from './module/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AlertComponent,
     TextsComponent,
     CrudComponent,
-    SelectDropdownComponent
+    SelectDropdownComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
