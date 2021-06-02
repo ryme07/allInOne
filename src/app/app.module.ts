@@ -25,6 +25,10 @@ import { CrudComponent } from './components/crud/crud.component';
 import { SelectDropdownComponent } from './module/select-dropdown/select-dropdown.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SpinnerComponent } from './module/spinner/spinner.component';
+import { HelloComponent } from './components/hello/hello.component';
+import { CompoOutletComponent } from './components/compo-outlet/compo-outlet.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { AccordionComponent } from './components/accordion/accordion.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +47,10 @@ import { SpinnerComponent } from './module/spinner/spinner.component';
     TextsComponent,
     CrudComponent,
     SelectDropdownComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    HelloComponent,
+    CompoOutletComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +58,8 @@ import { SpinnerComponent } from './module/spinner/spinner.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatExpansionModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },

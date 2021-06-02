@@ -1,1 +1,4 @@
-<p>Home works!</p>
+<div *ngFor="let postData of newArr">
+    <app-accordion [title]="postData.title" [Compo]="postData.postText"></app-accordion>
+    {{postData.isActive}}
+</div>
