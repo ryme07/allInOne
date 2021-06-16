@@ -29,6 +29,7 @@ import { HelloComponent } from './components/hello/hello.component';
 import { CompoOutletComponent } from './components/compo-outlet/compo-outlet.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { AccordionComponent } from './components/accordion/accordion.component';
+import { ExpansionComponent } from './page/expansion/expansion.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { AccordionComponent } from './components/accordion/accordion.component';
     SpinnerComponent,
     HelloComponent,
     CompoOutletComponent,
-    AccordionComponent
+    AccordionComponent,
+    ExpansionComponent
   ],
   imports: [
     BrowserModule,
